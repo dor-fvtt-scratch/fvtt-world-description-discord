@@ -1,7 +1,7 @@
 {
-  "name": "module",
-  "title": "New Module",
-  "description": "",
+  "name": "world-description-discord",
+  "title": "\uD83D\uDCAC World Description to Discord",
+  "description": "A simple module that outputs changes in a server's World Description to a Discord webhook.",
   "version": "This is auto replaced",
   "library": "false",
   "manifestPlusVersion": "1.0.0",
@@ -9,9 +9,9 @@
   "compatibleCoreVersion": "0.8.8",
   "authors": [
     {
-      "name": "The League of Extraordinary FVTT Developers",
-      "url": "https://github.com/League-of-Foundry-Developers",
-      "discord": "discordID#0001"
+      "name": "Dor",
+      "url": "https://github.com/Doresain",
+      "discord": "Dor#7514"
     }
   ],
   "dependencies": [
@@ -21,13 +21,10 @@
     
   ],
   "esmodules": [
-    "/scripts/module.js"
-  ],
-  "scripts": [
-    "/scripts/lib/lib.js"
+    "/module/init.js"
   ],
   "styles": [
-    "/styles/module.css"
+    "/styles/world-description-discord.css"
   ],
   "languages": [
     {
@@ -39,10 +36,9 @@
   "url": "This is auto replaced",
   "manifest": "This is auto replaced",
   "download": "This is auto replaced",
-  "media": [
-    {
-      "type": "icon",
-      "url": "https://avatars2.githubusercontent.com/u/71292812?s=400&u=ccdb4eeb7abf551ca8f314e5a9bfd0479a4d3d41&v=4"
-    }
-  ]
+  "media": [],
+  "bugs": "https://github.com/dor-fvtt-released-modules/fvtt-world-description-discord/issues",
+  "flags": {
+    "allowBugReporter": true
+  }
 }

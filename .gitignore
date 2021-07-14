@@ -1,0 +1,5 @@
+too-many-modules.lock
+.idea/
+docs/
+node_modules/
+foundry.js

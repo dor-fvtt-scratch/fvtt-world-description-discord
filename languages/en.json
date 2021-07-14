@@ -1,3 +1,10 @@
 {
-    "MODULE.hello": "hello"
+    "world-description-discord": {
+        "userAlerts": {
+            "postToDiscord": {
+                "postSucceeded": "Your world description update was successfully posted to Discord",
+                "postFailed": "There was an error pushing your world description to Discord. Verify your Webhook URL."
+            }
+        }
+    }
 }
