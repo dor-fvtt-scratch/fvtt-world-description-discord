@@ -55,14 +55,28 @@ export class WorldDescriptionToDiscord {
     }
 
     static _avatarImageUrl(backgroundImgPath) {
-        if (settingGet('avatarImage')) {
-            return settingGet('gameUrl') + settingGet('avatarImage');
+        const avatarImage = settingGet('avatarImage');
+        // Check if there is an avatar image set
+        if (avatarImage) {
+            // If an avatar image is set, check if it is an absolute path or relative path
+            if (avatarImage.startsWith('http')) {
+                // If absolute path, return it
+                return avatarImage;
+                // Otherwise, make it an absolute path then return it
+            } else {
+                return settingGet('gameUrl') + settingGet('avatarImage');
+            }
+            // If no avatar image is set, use the background image instead.
         } else {
             return this._backgroundImageUrl(backgroundImgPath);
         }
     }
 
     static _backgroundImageUrl(backgroundImgPath) {
-        return settingGet('gameUrl') + backgroundImgPath;
+        if (backgroundImgPath.startsWith('http')) {
+            return backgroundImgPath;
+        } else {
+            return settingGet('gameUrl') + backgroundImgPath;
+        }
     }
 }
